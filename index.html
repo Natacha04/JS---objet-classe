@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salaire2</title>
+    <script>
+        var salaire = {
+            idSalaire: 1,
+            idRemB: 30,
+            idSante: 2486433,
+            salaireNet: 3000,
+            idImpot: 300,
+            congesPayes: 500,
+            dateNetPayer: '10/05/2022',
+            calculSalaire : function(salaireNet, congesPayes){
+            console.log(arguments);
+            var montSalaire = salaireNet+congesPayes;
+            return montSalaire;
+            }
+            }
+
+            var sal1 = salaire.calculSalaire(3000, 500);
+            console.log('Le salaire est : ' +sal1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
